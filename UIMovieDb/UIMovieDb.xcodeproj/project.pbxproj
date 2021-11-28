@@ -18,9 +18,6 @@
 		740A77E22742ECCB0088DBE5 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A77E12742ECCB0088DBE5 /* MovieStore.swift */; };
 		740A77E42742F0A60088DBE5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A77E32742F0A60088DBE5 /* Utils.swift */; };
 		740A77E62742F8BB0088DBE5 /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A77E52742F8BB0088DBE5 /* Movie+Stub.swift */; };
-		740A77E92742FB6E0088DBE5 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 740A77E82742FB6E0088DBE5 /* movie_info.json */; };
-		740A77EB2742FBCF0088DBE5 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 740A77EA2742FBCF0088DBE5 /* movie_list.json */; };
-		740A77ED2742FC760088DBE5 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 740A77EC2742FC760088DBE5 /* search_movie.json */; };
 		740A77F02742FDA60088DBE5 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A77EF2742FDA60088DBE5 /* MovieBackdropCard.swift */; };
 		740A77F32742FDFA0088DBE5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A77F22742FDFA0088DBE5 /* ImageLoader.swift */; };
 		740A77F5274306CE0088DBE5 /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A77F4274306CE0088DBE5 /* MovieBackdropCarouselView.swift */; };
@@ -52,9 +49,6 @@
 		740A77E12742ECCB0088DBE5 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		740A77E32742F0A60088DBE5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		740A77E52742F8BB0088DBE5 /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
-		740A77E82742FB6E0088DBE5 /* movie_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
-		740A77EA2742FBCF0088DBE5 /* movie_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
-		740A77EC2742FC760088DBE5 /* search_movie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
 		740A77EF2742FDA60088DBE5 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
 		740A77F22742FDFA0088DBE5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		740A77F4274306CE0088DBE5 /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
@@ -104,7 +98,6 @@
 			children = (
 				740A77F12742FDCB0088DBE5 /* Bindings */,
 				740A77EE2742FD7A0088DBE5 /* Views */,
-				740A77E72742F8EE0088DBE5 /* Resources */,
 				740A77DE2742E9530088DBE5 /* Services */,
 				740A77DB2742E82B0088DBE5 /* Models */,
 				740A77C72742E77B0088DBE5 /* AppDelegate.swift */,
@@ -135,16 +128,6 @@
 				740A77E12742ECCB0088DBE5 /* MovieStore.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		740A77E72742F8EE0088DBE5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				740A77E82742FB6E0088DBE5 /* movie_info.json */,
-				740A77EA2742FBCF0088DBE5 /* movie_list.json */,
-				740A77EC2742FC760088DBE5 /* search_movie.json */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		740A77EE2742FD7A0088DBE5 /* Views */ = {
@@ -242,11 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740A77ED2742FC760088DBE5 /* search_movie.json in Resources */,
 				740A77D42742E77C0088DBE5 /* LaunchScreen.storyboard in Resources */,
 				740A77D12742E77C0088DBE5 /* Assets.xcassets in Resources */,
-				740A77E92742FB6E0088DBE5 /* movie_info.json in Resources */,
-				740A77EB2742FBCF0088DBE5 /* movie_list.json in Resources */,
 				740A77CF2742E77B0088DBE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

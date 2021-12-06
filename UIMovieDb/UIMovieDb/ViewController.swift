@@ -19,14 +19,23 @@ class ViewController: UIViewController {
 struct ContentView: View {
     var body: some View {
         TabView {
-            MovieListView()
+            MovieListGridView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "tv")
-                        Text("Filmes")
+                        Image(systemName: "house")
+                        Text("Home")
                     }
                 }
                 .tag(0)
+            
+            MovieListView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "star")
+                        Text("Outras Categorias")
+                    }
+                }
+                .tag(1)
 
             MovieSearchView()
                 .tabItem {
@@ -35,7 +44,7 @@ struct ContentView: View {
                         Text("Buscar")
                     }
                 }
-                .tag(1)
+                .tag(2)
         }
     }
 }

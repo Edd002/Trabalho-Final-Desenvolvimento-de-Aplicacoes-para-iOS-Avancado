@@ -23,7 +23,7 @@ struct MovieBackdropCarouselView: View {
                 HStack(alignment: .top, spacing: 16) {
                     ForEach(self.movies) { movie in
                         NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
-                            MovieBackdropCard(movie: movie)
+                            MovieBackdropCard(movie: movie, isGridView: false)
                                 .frame(width: 272, height: 200)
                         }
                         .buttonStyle(PlainButtonStyle())

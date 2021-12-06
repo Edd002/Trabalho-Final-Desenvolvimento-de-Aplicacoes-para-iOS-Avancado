@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct MovieBackdropCard: View {
-    
+
     let movie: Movie
+    let isGridView: Bool
     @ObservedObject var imageLoader = ImageLoader()
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
@@ -27,7 +28,11 @@ struct MovieBackdropCard: View {
             .cornerRadius(8)
             .shadow(radius: 4)
 
-            Text(movie.title)
+            if isGridView {
+                Text(movie.title).font(Font.system(size: 10))
+            } else {
+                Text(movie.title)
+            }
         }
         .lineLimit(1)
         .onAppear {
@@ -38,6 +43,6 @@ struct MovieBackdropCard: View {
 
 struct MovieBackdropCard_Previews: PreviewProvider {
     static var previews: some View {
-        MovieBackdropCard(movie: Movie.stubbedMovie)
+        MovieBackdropCard(movie: Movie.stubbedMovie, isGridView: false)
     }
 }

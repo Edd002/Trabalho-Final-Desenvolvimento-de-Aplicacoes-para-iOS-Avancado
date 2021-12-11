@@ -12,6 +12,7 @@ struct MovieGridView: View {
 
     let title: String
     let movies: [Movie]
+    @State var gridLayout = [GridItem(), GridItem()]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -23,9 +24,7 @@ struct MovieGridView: View {
 
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(
-                    columns: [
-                        GridItem(.flexible()), GridItem(.flexible())
-                    ],
+                    columns: gridLayout,
                     alignment: .center,
                     spacing: 0,
                     pinnedViews: [],
@@ -40,7 +39,7 @@ struct MovieGridView: View {
                             .padding(.trailing, 0)
                         }
                 })
-            }
+            }.frame(maxHeight: UIScreen.main.bounds.height - 250)
         }
     }
 }
